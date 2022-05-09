@@ -1,0 +1,46 @@
+canvas {
+    width: 50px;
+    background: red;
+    height: 3px;
+}
+.imageContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s;
+    cursor: crosshair !important;
+    height: 100%;
+    width: 100%;
+}
+.rectangle {
+    border: 1px solid #ff0000;
+    position: absolute;
+}
+.zoom {
+    transform-origin: 0px 0px;
+    transform: scale(1) translate(0px, 0px);
+    cursor: pointer !important;
+    scroll-behavior: smooth;
+}
+
+.container__menu {
+    /* Absolute position */
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    /* Misc */
+    border: 1px solid #1b62ad;
+    border-radius: 0.25rem;
+    background-color: #f7fafc;
+    z-index: 9999;
+}
+.container__menu_hidden {
+    display: none;
+}
+
+input:disabled {
+    cursor: not-allowed;
+    border-color: red;
+}
